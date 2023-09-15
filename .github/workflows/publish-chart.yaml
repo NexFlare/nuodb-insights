@@ -32,14 +32,7 @@ jobs:
       - name: Package Helm charts
         run: ./scripts/package.sh
       - name: Commit uncommitted changes
-        run: |
-          set -e
-          GIT_STATUS="$(git status --porcelain)"
-          if [ "$GIT_STATUS" != "" ]
-          then
-              git add ./stable
-              git commit -m "v${{ steps.vars.outputs.version }} commit"
-          fi
+        run: ./scripts/uncommitedChanges.sh
       - name: Publish GitHub release
         run: |
           gh release create v${{ steps.vars.outputs.version }} \
