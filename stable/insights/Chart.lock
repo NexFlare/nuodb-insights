@@ -5,5 +5,5 @@ dependencies:
 - name: influxdb2
   repository: https://helm.influxdata.com/
   version: 2.1.1
-digest: sha256:2bf1c7cfbf8ef19132043756336e7ccdb11cc2ee69f662f69bf1e3ee65c4ebe5
-generated: "2023-07-20T15:54:30.0347332-04:00"
+digest: sha256:3cc21167ea5fe1aa92e6951987420026c8d4aea177b57bfd119001f1cdbd4aa2
+generated: "2023-09-15T10:10:10.30749134-04:00"
