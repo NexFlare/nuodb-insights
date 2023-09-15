@@ -31,7 +31,7 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
       - name: Package Helm charts
         run: ./scripts/package.sh
-      - name: Commit uncommitted changes
+      - name: Remove uncommitted changes
         run: ./scripts/uncommitedChanges.sh
       - name: Publish GitHub release
         run: |
